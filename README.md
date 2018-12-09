@@ -34,7 +34,7 @@ replace the execution role with an existing role in your account!
 ```shell
 $ aws lambda create-function --function-name OCamlTest \
   --handler doesnt.matter \
-  --zip-file file://./ocaml.zip \
+  --zip-file fileb://./ocaml.zip \
   --runtime provided \
   --role arn:aws:iam::XXXXXXXXXXXXX:role/your_lambda_execution_role \
   --tracing-config Mode=Active
